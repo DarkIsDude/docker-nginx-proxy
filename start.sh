@@ -7,5 +7,4 @@ fi
 
 envsubst '${NGINX_URL},${NGINX_SCHEMA}' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
 
-bash
-#nginx -g 'daemon off;'
+nginx -g 'daemon off;'
